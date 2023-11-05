@@ -1,0 +1,79 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 4px;
+  background-color: lightblue;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: lightblue;
+}
+
+#modifiedHeader1 {
+  color: green;
+}
+
+#modP1 {
+  font-size: 35px;
+  color: red;
+}
+
+* {
+  background-color: lightgreen;
+}
+
+img {
+  width: 75%;
+  height: auto;
+  border-radius: 10%;
+  border-style: groove;
+}
+
+img:hover {
+  animation-name: fadeInOut, moveLeft300px, bounce;
+  animation-duration: 2.5s, 5s, 1s;
+  animation-iteration-count: 2, 1, 5;
+}
+
+/*Animation Start*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations*/
+@keyframes slidein {
+  from {
+    margin-left: 90%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/*Animation End*/
