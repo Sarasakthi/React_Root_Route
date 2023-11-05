@@ -17,6 +17,7 @@ export default function Home() {
       <h2 id="modP1">&#9829; Tarunjayanth</h2>
       <h2 id="modP1">&#9829; Jaiashish</h2>
       <h2 id="modP1">&#9829; Ammu</h2>
+      <br></br>
       {/*{emoji("heart")}
         <EmojiPicker />*/}
     </>
